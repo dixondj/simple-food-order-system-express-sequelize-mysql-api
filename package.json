@@ -1,0 +1,23 @@
+{
+  "name": "foodordersystem-express-api",
+  "version": "1.0.0",
+  "description": "food order system node express crud api with sequalize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql"
+  ],
+  "author": "DC",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.0",
+    "sequelize": "^6.31.1",
+    "uuid": "^9.0.0"
+  }
+}
