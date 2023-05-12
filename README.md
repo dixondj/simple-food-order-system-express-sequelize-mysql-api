@@ -23,17 +23,13 @@ Project Description
 <br/>
     a. Get Food Item <Strong>(/api/getProductList)</Strong>
     <br/>
-
-     b. Create Order <Strong>(/api/createOrder)</Strong> 
+    b. Create Order <Strong>(/api/createOrder)</Strong> 
        <br/> 
-
-     c. Update Order Status <Strong>(/api/updateOrderStatus)</Strong> 
+    c. Update Order Status <Strong>(/api/updateOrderStatus)</Strong> 
     <br/>
-
-     d. Get Order List <Strong>(/api/getOrderList)</Strong> 
+    d. Get Order List <Strong>(/api/getOrderList)</Strong> 
     <br/>
-
-     e.Delete Order <Strong>(/api/deleteOrde)</Strong> 
+    e. Delete Order <Strong>(/api/deleteOrde)</Strong> 
     <br/>
 
     
