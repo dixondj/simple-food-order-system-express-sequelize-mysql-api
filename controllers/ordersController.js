@@ -23,18 +23,7 @@ const createOrder = async (req, res) => {
     } else {
         const { customerName, foodItem, qty } = req.body
         try {
-            const customerNameExist = await Orders.findAll({
-                where: {
-                    customerName,
-                },
-            });
-
-            if (customerNameExist.length > 0) {
-
-                return res.status(400).json({ status: 'Error', message: 'Name Exist!' })
-
-            } else {
-
+            
                 const checkFoodItemExist = await FoodItem.findAll({
                     where: {
                         itemName: foodItem,
@@ -46,7 +35,7 @@ const createOrder = async (req, res) => {
                     const assignOrderId = uuid()
                     const pendingPayment = "PENDING PAYMENT"
 
-                    await Orders.create({
+                   const you =  await Orders.create({
                         id: assignOrderId,
                         customerName,
                         orderItem: foodItem,
@@ -66,14 +55,14 @@ const createOrder = async (req, res) => {
 
                     res.status(200).send({
                         status: 'OK',
-                        message: 'Successfully added to the Order List'
+                        message: 'Successfully added to the Order List',
+                        data: you
                     })
 
                 } else {
                     return res.status(400).json({ status: 'Error', message: 'this Food Item does not exist' })
                 }
 
-            }
 
         } catch (error) {
             console.log(error);
